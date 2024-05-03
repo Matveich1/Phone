@@ -19,12 +19,12 @@ load_dotenv()
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = '0cir6)b-3&nij^mfa%7&)7e(i(eaiy8at3cgzen3*!3+1)p)0c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = True
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -53,12 +53,12 @@ MIDDLEWARE = [
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('ENGINE'),
-        'NAME': os.getenv('NAME'),
-        'HOST': os.getenv('HOST'),
-        'PORT': os.getenv('PORT'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '',
+        'HOST': '',
+        'PORT': '5432',
+        'USER': 'postgres',
+        'PASSWORD': '1111',
     }
 }
 
